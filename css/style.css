@@ -2214,9 +2214,10 @@ body {
   .modal-user #btn-add-user {
     margin: 5px 25px; }
 
-/*@media only screen and (min-width: 48em) {	
+@media only screen and (min-width: 48em) {
+  body {
+    background-color: orange; } }
 
-	}*/
 @media only screen and (min-width: 62em) {
   body {
     background-color: pink; } }
