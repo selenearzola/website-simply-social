@@ -2217,8 +2217,10 @@ body {
 /*@media only screen and (min-width: 48em) {	
 
 	}*/
-/*@media only screen and (min-width: 62em) {
-	}*/
+@media only screen and (min-width: 62em) {
+  body {
+    background-color: pink; } }
+
 @media only screen and (max-width: 48em) {
   body {
     background-color: red; }
