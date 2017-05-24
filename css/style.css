@@ -2207,7 +2207,7 @@ body {
   margin: 5px 0 5px 90px; }
 
 .modal-user {
-  /*height: 45%;*/ }
+  height: 30%; }
   .modal-user h4 {
     margin: 15px 18px;
     letter-spacing: 1px; }
@@ -2220,6 +2220,8 @@ body {
 /*@media only screen and (min-width: 62em) {
 	}*/
 @media only screen and (max-width: 48em) {
+  body {
+    background-color: red; }
   .navbar .nav-right {
     margin-right: 0; }
     .navbar .nav-right .search {
@@ -2232,6 +2234,8 @@ body {
     display: block; } }
 
 @media only screen and (min-width: 75em) {
+  body {
+    background-color: purple; }
   .add-new-post {
     margin-bottom: 80px; }
   .post-container .post .info {
@@ -2240,6 +2244,10 @@ body {
     /*12*/ } }
 
 @media only screen and (min-width: 160em) {
+  body {
+    background-color: blue; }
   .post-container .post .info {
     float: right;
-    width: 8%; } }
+    width: 8%; }
+  .modal-user {
+    height: 20%; } }
