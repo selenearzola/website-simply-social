@@ -1,7 +1,19 @@
 $('#btn-add-user').on('click', function(e) {
+
   e.preventDefault();
+
+
+  if(!validateFields()){
+   $('.response-message').text('Please fill all the fields.').css('color', '#FF0000').show();   
+   return;
+    }
+
+
+  $('.response-message').text('');    
   validateEmail($('#email').val());
+
 });
+
 $('.add-comment').on('click', function(e){
   e.preventDefault();
   $('.modal-comment').toggle();
@@ -14,9 +26,31 @@ $('.add-user').on('click', function(e){
 });
 $('.close-button').on('click', function(e) {
   e.preventDefault();
+
+  $('.response-message').text('');
+  $('form :input').val("");
+
+
+
   $('.modal-user, .modal-comment').hide();
   $('.modal-overlay').css("display", "none");
 });
+
+
+function validateFields(){
+  var valid = true;
+  $('input').each(function() {
+    if ($(this).val().length == 0) {
+      valid = false;
+      return false;
+    }
+  });
+  
+  return  valid;
+}
+
+
+
 function validateEmail(email) {
   $.ajax({
     type: 'GET',
