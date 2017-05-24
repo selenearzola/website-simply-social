@@ -2207,7 +2207,7 @@ body {
   margin: 5px 0 5px 90px; }
 
 .modal-user {
-  height: 45%; }
+  /*height: 45%;*/ }
   .modal-user h4 {
     margin: 15px 18px;
     letter-spacing: 1px; }
