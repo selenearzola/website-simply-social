@@ -2219,10 +2219,6 @@ body {
 .modal-user #btn-add-user {
   margin: 5px 25px; }
 
-/*@media only screen and (min-width: 48em) {	
-	}*/
-/*@media only screen and (min-width: 62em) {	
-	}*/
 @media only screen and (max-width: 48em) {
   .navbar .nav-right {
     margin-right: 0; }
