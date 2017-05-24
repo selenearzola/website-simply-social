@@ -2260,5 +2260,6 @@ body {
   .post-container .post .info {
     float: right;
     width: 8%; }
-  .modal-user {
-    height: 20%; } }
+  /*.modal-user{	
+		height: 20%;
+	}*/ }
